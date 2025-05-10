@@ -1,0 +1,158 @@
+<!-- @font-face {
+  font-family: "Graphik";
+  src: url("fonts/Graphik.ttf");
+  }
+
+body {
+  margin: 0px;
+}
+
+/*h1 {
+  font-family: Graphik, sans-serif;
+  color: lightyellow;
+  margin: 0px;
+}
+h2 {
+  font-family: Graphik, sans-serif;
+  color: olive;
+  margin-top: 50px;
+}*/
+
+#logo {
+  height: 50px;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 25px;
+
+}
+
+#navbar, #navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  border-bottom: 3px solid #FFF;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+
+}
+
+#navbar li:hover, #navbar #active-menu { 
+  border-bottom: 1px solid white;
+  position: relative;
+
+}
+
+#navbar, #navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+#navbar {
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: relative;
+  z-index: 1;
+  margin-right: 80px;
+}
+
+#navbar li {
+
+  min-width: 100px;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+ 
+#navbar a:hover {
+  color:  black;
+}
+
+/*#navbar li, a:hover {
+  border-bottom: 3px solid lightblue;
+}*/
+
+.drop {
+  padding: 5px;
+  font-size: 10px;
+  width: 170px;
+    display: block;
+    height: auto;
+    background-color: #82c3dc;
+    background-color: darkolivegreen;
+
+}
+
+#navbar a {
+  font-family: Graphik, sans-serif;
+  text-decoration: none;
+  color: #ACACAC;
+  height: 30px;
+  line-height: 50px;
+}
+
+#navbar ul {
+  position: absolute;
+  display: none;
+
+  font-family: Graphik, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+#navbar ul ul {
+  left: 180px;
+  top: 0px;
+
+}
+
+#navbar li:hover > ul {
+  width: 500px;
+  display: list-item;
+  }
+
+
+#page-wrapper {
+<!--   /*page contents centered*/
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px; -->
+  min-height: 100vh; /* set height to view so footer always at bottom*/
+}
+
+/*note: adds feature that are not specified locally, just added for safety consistency*/
+#main {
+  /*justify-content: center;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*padding: 25px;*/
+  padding-bottom: 50px;
+  font-family:  Graphik, sans-serif;
+}
+
+#button {
+  font-family: Graphik, sans-serif;
+}
+
+#footer {
+  font-family: Graphik, sans-serif;
+  background-color: black;
+  color: #FFF;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.8em;
+
+} -->
