@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tiffany Kao</title>
+	<link rel="stylesheet" href="index.css"> <!-- LINKED -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+	<style>
+		body {
+			width: 900px;
+			margin: auto;
+			letter-spacing: 0.28px;
+			/*font-family: monospace;*/
+			/*font-family: 'Inter';font-size: 22px;*/
+	/*				text-decoration: none;*/
+		}
+
+		#top-row{
+/*					position:  fixed;*/
+			padding-top: 20px;
+			height:  50px;
+
+		}
+
+		#name {
+			font-family:  arial;
+			/*color: rgb(0, 127, 255);*/
+			/*font-family:  monospace;*/
+			font-size: 16px;
+			font-weight:  400;
+		}
+
+
+		li {
+			padding-left:  20px;
+		
+/*			vertical-align: bottom;*/
+			display: inline;
+			background-color: none;
+
+		}
+
+		li a{
+			display: inline-block;
+/*			vertical-align: bottom;*/
+			font-size:  13px;
+			text-decoration: none;
+			color:  black;
+			font-color:  #ffff;
+			font-family:  helvetica;
+			text-transform:  uppercase;
+		}
+
+		#navibar{
+			text-align: right;
+/*			position:  fixed;
+			right:  0px;*/
+		}
+
+		#container{
+			width: 900px;
+			margin:  auto;
+			padding-bottom: 100px;
+			
+		}
+
+        .gallery-container {
+        	/*background-color:  red;*/
+        	margin-right:  0px;
+            
+            margin-top: 8px;
+
+        }
+        
+        .gallery-item {
+/*            margin-bottom: 10px;*/
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        
+/*        .gallery-item:hover {
+            transform: scale(1.02);
+        }*/
+        
+        .gallery-img {
+           
+            object-fit: cover;
+            padding:  0px;
+            height:  200px;
+        }
+        
+/*        @media (max-width: 2000px) {
+            .gallery-img {
+                height: 200px;  /*Smaller height on mobile but still in a row */
+            }
+        }*/
+
+        .row {
+			/*height:  400px;*/
+			/*background-color:  red;*/
+		}
+
+/*		#sketchbook {
+			height: 390px;
+			width: auto;
+		}
+
+		#sketchbook-wrap {
+			padding-top: 80px;
+			justify-content: center;
+		}*/
+
+		#button {
+			margin-top:  10px;
+			height: 30px;
+			width:  auto;
+			float:  left;
+			opacity: 0.5;
+		}
+
+		#button:hover{
+			opacity: 1.0;
+		}
+
+
+		h1{
+			/*font-family: monospace;*/
+    		/*font-family: 'Inter';font-size: 22px;*/
+    		
+  			font-stretch: ultra-expanded;
+  			font-weight: bond;
+  			font-size:  40px;
+			/*position:  fixed;*/
+			/*font-family:  Helvetica Neue;*/
+			/*font-family: "Archivo Black", sans-serif;*/
+		}
+
+
+		#page-wrapper {
+			margin-bottom:  100px;
+		}
+
+		h2 {
+
+			font-size: 22px;
+			font-family:  helvetica;
+			/*font-family:  monospace;*/
+			/*font-weight:  bold;*/
+		}
+
+		h4{
+			font-family:  arial;
+			text-transform:  uppercase;
+			font-size: 12px;
+		}
+
+		h5{
+			font-family:  arial;
+			font-size: 11px;
+			color:  darkgrey;
+		}
+
+		h6{
+			font-family:  helvetica;
+	/*		font-family:  monospace;*/
+			font-size: 11px;
+			color:  darkgrey;
+/*			text-align:  right;*/
+
+		}
+
+		#spacer {
+			height:  100px;
+		}
+
+		#name {
+			font-family:  helvetica;
+/*		    line-height: 0.8;  Lower overall line height for the container */
+
+		}
+
+		#foot{
+			text-align:  center;
+			width: 500px;
+			font-size:  12px;
+			margin:  auto;
+		}
+
+
+}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id = top-row class = "row">
+<!-- 			<div id = "name" > -->
+
+			<div class="col-sm-3">
+				<!-- <img id = "logo" src = "img/T_KAO.png" alt = "TEAKAO"> -->
+				<h4 id = "name">TKAO</h4>
+
+				<!-- <h2>EDITOR, ARTIST</h2>	 -->
+			</div>
+			<div class="col-9">
+				<ul id="navibar" >
+
+					<!-- use react but adding additional html for now -->
+
+					<li><a href="index.html">Video</a></li>
+					<!-- <li><a href="paintings.php">Paintings</li> -->
+					<li><a href="design.html">Design</a></li>
+					<li><a href="personal.html">ART/STORY</a></li>
+					<!-- <li><a href="misc.php">MISC</a></li> -->
+					<li><a href="about.html">高</a></li>
+
+				</ul> <!-- navbar -->
+			</div>
+
+<!-- 			</div> -->
+
+	</div>	<!-- #top-row -->
+
+
+
+
+	<div id = "spacer">
+	</div>	
+
+
+
+<!-- 	<div id="page-wrapper"> -->
+	<div id="container"><!-- container-->
+
+
+
+			<!-- ROW 1-->
+			<div class="row gx-2 gallery-container">
+				    <div class="col-sm-3">
+				    	<div class="gallery-item">
+					        <h2>Crosstown LA</h2>
+					        <h4>Designer & Data Visualizer</h4>
+					        <h5>From our <a href="https://xtown.la/2024/12/06/election-turnout-tumbled-this-year-in-los-angeles-county/">nonprofit newsroom</a>  in Los Angeles, we produce original stories and newsletters.</h5>
+					        <h5>Cover Art</h5>
+					        <h5>Pitch deck for Google News Initiative</h5>
+					        <h5>Animated graphics</h5>
+					         <h6>2024-2025</h6>
+					        	 <br></br>
+
+					    </div>    
+				    </div>
+
+				    <!-- https://xtown.la/2021/07/19/rachel-malarich-qa/ -->
+			    		            <!-- Single row of 3 images -->
+			    	<div class = "col-3"> 
+			    			 <img class="gallery-img" src="img/xtownpage.png"></img>
+			    	</div>	
+					<div class = "col-6"> 
+					
+					        <img class="gallery-img" src="img/Crosstown-Tree-canopy.jpg"></img>
+					 
+		                    <img src="img/CovidTracker.jpg" alt="Gallery Image 1" class="gallery-img">
+		             
+		                    <img src="img/campaignfinance_unsigned.jpg" alt="Gallery Image 2" class="gallery-img">
+		              
+		            </div>
+
+			</div><!-- ROW 1-->
+
+
+			<!-- ROW 4 -->
+			<div class="row gx-2  gallery-container ">
+				    <div class="col-sm-3">
+				    	<div class="gallery-item">
+					        <h2>NBCUniversal</h2>
+					        <h4>VIDEO EDITOR, ANIMATOR</h4>
+					        <h5>Creative content for TV, Social, Campaign / ft. America's Got Talent, Law & Order, The Voice, Jimmy Fallon Tonight</h5>
+
+					        <h6>2023-present</h6>
+
+					        <br></br>
+
+
+					    </div>    
+				    </div>
+			    		            <!-- Single row of 3 images -->
+		            <div class="col">
+		                <div class="gallery-item">
+		                    <img src="img/AGT.png" alt="Gallery Image 2" class="gallery-img">
+		                </div>
+		            </div>
+
+		            <div class="col-3">
+		                <div class="gallery-item">
+		                    <img src="img/adam.png" alt="Gallery Image 3" class="gallery-img">
+		                </div>
+		            </div>	
+
+			</div><!-- ROW 4 -->
+
+
+			<!-- ROW 3 -->
+<!-- 			<div class="row gx-2  gallery-container ">
+				    <div class="col-sm-3">
+				    	<div class="gallery-item">
+					        <h2>VISUAL DEVELOPMENT</h2>
+					        <h6>GOUACHE, OIL, DIGITAL</h5>
+					        <h4></h4>
+					        <br></br>
+					        
+					        <h5>I LOVE Plein Air</h5>
+					        <h5>Plein Air</h5>
+
+					    </div>    
+				    </div> -->
+			    		            <!-- Single row of 3 images -->
+<!-- 		            <div class="col-6">
+		                <div class="gallery-item">
+		                    <img src="img/FO_Key1.jpeg" alt="Gallery Image 2" class="gallery-img">
+		                </div>
+		            </div>
+
+		            <div class="col">
+		                <div class="gallery-item">
+		                    <img src="img/character_texture.png" alt="Gallery Image 3" class="gallery-img">
+		                </div>
+		            </div>	 -->
+
+			<!-- </div> --><!-- ROW 3 -->
+
+	
+<!-- 			<img id = "home-page-photo" src = "img/la-3.png" alt = "TEAKAO"> -->	
+		<div id = "spacer"></div>
+		<div id = "foot"> TIFFANY KAO &copy; 2025</div>
+	</div><!-- container-->
+
+
+
+<!-- 			<div class= "row" id="sketchbook-wrap">
+				<img src="img/sketchbook2.png" alt="sketchbook" id="sketchbook">
+			</div> -->
+
+
+<!-- 		<div class="row justify-content-md-center">
+		    <div class="col d-flex flex-row justify-content-center">
+		    	<img class="d-flex justify-content-start" src="img/prev-button.png" alt="sketchbook" id="button">
+		    </div> -->
+<!-- 		    <div class="col-md-auto">
+		    </div> -->
+<!-- 		    <div class="col d-flex flex-row justify-content-center">
+		      <img class="d-flex justify-content-end" src="img/next-button.png" alt="sketchbook" id="button">
+		    </div> -->
+  		<!-- </div> #buttons-row -->
+
+
+		<!-- </div>#container -->
+
+
+
+
+
+	<!-- 				<div class = "d-flex">
+					<img src="img/prev-button.png" alt="sketchbook" id="button">
+				</div>
+				<div class = "d-flex">
+					<img src="img/next-button.png" alt="sketchbook" id="button">
+				</div> -->
+
+</body>
+<!-- 	<div id="footer">
+		TIFFANY KAO &copy; 2025
+	</div> -->
+</html>

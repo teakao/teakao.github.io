@@ -7,21 +7,72 @@
 	<link rel="stylesheet" href="index.css"> <!-- LINKED -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
 	<style>
 		body {
-			font-family: monospace;
+			width: 900px;
+			margin: auto;
+			letter-spacing: 0.28px;
+			/*font-family: monospace;*/
+			/*font-family: 'Inter';font-size: 22px;*/
+	/*				text-decoration: none;*/
 		}
+
+		#top-row{
+/*					position:  fixed;*/
+			padding-top: 20px;
+			height:  50px;
+
+		}
+
+		#name {
+			font-family:  arial;
+			color: rgb(0, 127, 255);
+			letter-spacing: 1.5px;
+			/*font-family:  monospace;*/
+			font-size: 16px;
+			font-weight:  400;
+		}
+
+
+		li {
+			padding-left:  20px;
 		
+/*			vertical-align: bottom;*/
+			display: inline;
+			background-color: none;
+
+		}
+
+		li a{
+			display: inline-block;
+/*			vertical-align: bottom;*/
+			font-size:  13px;
+			text-decoration: none;
+			color:  black;
+			font-color:  #ffff;
+			font-family:  helvetica;
+			text-transform:  uppercase;
+		}
+
+		#navibar{
+			text-align: right;
+/*			position:  fixed;
+			right:  0px;*/
+		}
+
 		#container{
-		/*	background-color:  pink;*/
+			width: 900px;
+			margin:  auto;
 			padding-bottom: 100px;
+			
 		}
 
         .gallery-container {
         	/*background-color:  red;*/
         	margin-right:  0px;
-            margin-left:  10px;
+            
             margin-top: 8px;
 
         }
@@ -38,7 +89,7 @@
         
         .gallery-img {
             width: 100%;
-            height: 300px;
+ 
             object-fit: cover;
             padding:  0px;
             transition: all 0.3s ease;
@@ -46,16 +97,16 @@
         
         @media (max-width: 2000px) {
             .gallery-img {
-                height: 400px;  /*Smaller height on mobile but still in a row */
+                height: 280px;  /*Smaller height on mobile but still in a row */
             }
         }
 
         .row {
-			height:  400px;
+			/*height:  400px;*/
 			/*background-color:  red;*/
 		}
 
-		#sketchbook {
+/*		#sketchbook {
 			height: 390px;
 			width: auto;
 		}
@@ -63,7 +114,7 @@
 		#sketchbook-wrap {
 			padding-top: 80px;
 			justify-content: center;
-		}
+		}*/
 
 		#button {
 			margin-top:  10px;
@@ -79,82 +130,68 @@
 
 
 		h1{
-			font-family: monospace;
+			/*font-family: monospace;*/
+    		/*font-family: 'Inter';font-size: 22px;*/
+    		
   			font-stretch: ultra-expanded;
-  			font-size:  50px;
+  			font-weight: bond;
+  			font-size:  40px;
 			/*position:  fixed;*/
 			/*font-family:  Helvetica Neue;*/
 			/*font-family: "Archivo Black", sans-serif;*/
 		}
 
-		#navbar {
-			position:  fixed;
-			font-family:  Helvetica Neue;
-			color:  #000;
-			font-size:  15px;
-			text-transform:  uppercase;
-		}
-
-
-		.top-row{
-			height:  200px;
-/*			background:  red;*/
-			position:  fixed;
-		}
-
-
-
-/*		#riley-photo{
-			height:  100px;
-		}*/
 
 		#page-wrapper {
 			margin-bottom:  100px;
 		}
 
 		h2 {
-			font-size: 25px;
-			font-weight:  bold;
+
+			font-size: 22px;
+			font-family:  helvetica;
+			/*font-family:  monospace;*/
+			/*font-weight:  bold;*/
 		}
 
 		h4{
-			font-size: 20px;
+			font-family:  arial;
+			text-transform:  uppercase;
+			font-size: 12px;
 		}
 
 		h5{
-			text-transform:  uppercase;
-			font-size: 12px;
-/*			text-align:  right;*/
+			font-family:  arial;
+			font-size: 11px;
+			color:  darkgrey;
 		}
 
-/*		h6{
-			text-align:  right;
+		h6{
+			font-family:  helvetica;
+	/*		font-family:  monospace;*/
+			font-size: 11px;
+			color:  darkgrey;
+/*			text-align:  right;*/
+
 		}
-*/
 
 		#spacer {
-			height:  200px;
+			height:  100px;
 		}
 
 		#name {
-		    line-height: 0.8; /* Lower overall line height for the container */
+			font-family:  helvetica;
+/*		    line-height: 0.8;  Lower overall line height for the container */
 
 		}
 
-		#name h1 {
-		    margin-bottom: -6px; /* Negative margin pushes the next element up */
-		    line-height: 0.9; /* Tighter line height for h1 */
-		    position: relative; /* For z-index to work */
-		    z-index: 2; /* Higher z-index to ensure it appears on top */
+		#foot{
+			text-align:  center;
+			width: 500px;
+			font-size:  12px;
+			margin:  auto;
 		}
 
-		#name h2 {
-			font-size:  20px;
-		    position: relative; /* For z-index to work */
-		    z-index: 1; /* Lower z-index */
-		    margin-top: 0; /* Remove top margin */
-		    line-height: 0.9; /* Tighter line height for h2 */
-		}
 
 }
 
@@ -164,24 +201,36 @@
 </head>
 <body>
 
-	<div class = "top-row">
-			<div id = "name">
-<!-- 			<div class="col"> -->
-				<!-- <img id = "logo" src = "img/teakao.png" alt = "TEAKAO"> -->
-				<h1>TIFFANY KAO<h1>
+	<div id = top-row class = "row">
+<!-- 			<div id = "name" > -->
+
+			<div class="col-sm-3">
+				<!-- <img id = "logo" src = "img/T_KAO.png" alt = "TEAKAO"> -->
+				<h4 id = "name">TKAO</h4>
+
 				<!-- <h2>EDITOR, ARTIST</h2>	 -->
-<!-- 			</div> -->
+			</div>
+			<div class="col-9">
+				<ul id="navibar" >
+
+					<!-- use react but adding additional html for now -->
+
+					<li><a href="index.html">Video</a></li>
+					<!-- <li><a href="paintings.php">Paintings</li> -->
+					<li><a href="design.html">Design</a></li>
+					<li><a href="personal.html">Art/STORY</a></li>
+					<!-- <li><a href="misc.php">MISC</a></li> -->
+					<li><a href="about.php">高</a></li>
+
+				</ul> <!-- navbar -->
 			</div>
 
-			<ul id="navbar" class = "col">
-				<li id="active-menu"><a href="video.php">Video</a></li>
-				<li id="active-menu"><a href="paintings.php">Paintings</li>
-				<li id="active-menu"><a href="visdev.php">Visual Development</a></li>
-				<li id="active-menu"><a href="misc.php">Objects</a></li>
-			<!-- 	<li id="active-menu"><a href="about.php">About</a></li> -->
+<!-- 			</div> -->
 
-			</ul> <!-- navbar -->
 	</div>	<!-- #top-row -->
+
+
+
 
 	<div id = "spacer">
 	</div>	
@@ -192,27 +241,33 @@
 	<div id="container"><!-- container-->
 
 
+
 			<!-- ROW 1-->
 			<div class="row gx-2 gallery-container">
 				    <div class="col-sm-3">
 				    	<div class="gallery-item">
-					        <h2>"LIT CHECK"</h2>
-					  
-					        <h4>Reese's Book Club X Apple Books</h4>
-					        <h6>EDITOR / ASSOCIATE PRODUCER</h5>
-					        		<!-- <br></br> -->
-					        <h5>dir. Justine Sto Tomas</h5>
+					        <h2>Lit Check</h2>
+					        <h4>EDITOR / ASSOCIATE PRODUCER</h4>
+					        <h5>A <a href="https://www.instagram.com/reesesbookclub/?hl=en">Reese's Book Club X Apple Books</a> collaboration featuring authors Emily Henry, Riley Keough, Ashley Elston, & Nadia Caterina Munno</h5>
+					         <h6>2024-2025</h6>
+					        	 <br></br>
+					      
+
+					       <!--  		<br></br> -->
+					      <!--   <h5>dir. Justine Sto Tomas</h5>
 					        <h5>creative Jane K Lee</h5>
-					        <h5>Summer 2024-Summer 2025</h5>
+					        <h5>Summer 2024-Summer 2025</h5> -->
 
 					    </div>    
 				    </div>
 			    		            <!-- Single row of 3 images -->
-			    	<div class="col-2">
-		                <div class="gallery-item">
-		                    <img src="img/pastaqueen2.png" alt="Gallery Image 2" class="gallery-img">
-		                </div>
-		            </div>
+					<div class="col-2">
+						<div class="gallery-item">
+					        <video class="gallery-img" autoplay loop muted playsinline>
+					            <source src="img/pastaqueen_prev.mp4" type="video/mp4">
+					        </video>
+					    </div>
+					</div>
 		            	            
 		            <div class="col">
 		                <div class="gallery-item">
@@ -234,7 +289,6 @@
 		                </div>
 		            </div>	 -->
 			</div><!-- ROW 1-->
-
 
 			<!-- ROW 2 -->
 <!-- 			<div class="row gx-2 gallery-container ">
@@ -276,10 +330,14 @@
 			<div class="row gx-2  gallery-container ">
 				    <div class="col-sm-3">
 				    	<div class="gallery-item">
-					        <h2>NBCUniversal Creative Content</h2>
-					        <h6>VIDEO EDITOR</h5>
-					        <h6>SOCIAL CONTENT, GRAPHICS ANIMATION</h6>
+					        <h2>NBCUniversal</h2>
+					        <h4>VIDEO EDITOR, ANIMATOR</h4>
+					        <h5>Creative content for TV, Social, Campaign / ft. America's Got Talent, Law & Order, The Voice, Jimmy Fallon Tonight</h5>
+
+					        <h6>2023-present</h6>
+
 					        <br></br>
+
 
 					    </div>    
 				    </div>
@@ -330,6 +388,8 @@
 
 	
 <!-- 			<img id = "home-page-photo" src = "img/la-3.png" alt = "TEAKAO"> -->	
+		<div id = "spacer"></div>
+		<div id = "foot"> TIFFANY KAO &copy; 2025</div>
 	</div><!-- container-->
 
 
@@ -357,10 +417,6 @@
 
 
 
-	<div id="footer">
-		Tiffany Kao &copy; 2025
-	</div>
-
 	<!-- 				<div class = "d-flex">
 					<img src="img/prev-button.png" alt="sketchbook" id="button">
 				</div>
@@ -369,4 +425,7 @@
 				</div> -->
 
 </body>
+<!-- 	<div id="footer">
+		TIFFANY KAO &copy; 2025
+	</div> -->
 </html>
