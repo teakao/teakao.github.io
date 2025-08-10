@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Layout</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    	#top-row{
+/*					position:  fixed;*/
+			padding-top: 20px;
+			height:  50px;
+
+		}
+
+		#name {
+			font-family:  arial;
+			color: rgb(0, 127, 255);
+			letter-spacing: 1.5px;
+			/*font-family:  monospace;*/
+			font-size: 16px;
+			font-weight:  400;
+		}
+
+
+		li {
+			padding-left:  20px;
+		
+/*			vertical-align: bottom;*/
+			display: inline;
+			background-color: none;
+
+		}
+
+		li a{
+			display: inline-block;
+/*			vertical-align: bottom;*/
+			font-size:  11px;
+			text-decoration: none;
+			color:  black;
+			font-color:  #ffff;
+			font-family:  helvetica;
+		}
+
+		#navibar{
+			text-align: right;
+/*			position:  fixed;
+			right:  0px;*/
+		}
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            padding:  10px;
+            object-fit: cover;
+        }
+        
+        .row {
+            margin: 0 -15px;
+        }
+        
+        .col-md-6 {
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+        
+        /* Ensure images never overflow their containers */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Optional: Add some spacing between images on mobile */
+        @media (max-width: 768px) {
+            .col-md-6 {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+
+
+<!-- 			</div> -->
+
+	</div>	<!-- #top-row -->
+<body>
+    <div class="container">
+    	<div id = top-row class = "row">
+<!-- 			<div id = "name" > -->
+
+			<div class="col-sm-3">
+				<!-- <img id = "logo" src = "img/T_KAO.png" alt = "TEAKAO"> -->
+				<h4 id = "name">TKAO</h4>
+
+				<!-- <h2>EDITOR, ARTIST</h2>	 -->
+			</div>
+			<div class="col-9">
+				<ul id="navibar" >
+
+					<!-- use react but adding additional html for now -->
+
+					<li><a href="index.html">Video</a></li>
+					<!-- <li><a href="paintings.php">Paintings</li> -->
+					<li><a href="design.html">Design</a></li>
+					<li><a href="personal.html">Art/Story</a></li>
+					<!-- <li><a href="misc.php">MISC</a></li> -->
+					<li><a href="about.html">About</a></li>
+
+				</ul> <!-- navbar -->
+			</div>
+ 		</div> 
+ 		tiffanikao@gmail.com 
+        </div>
+    </div>
+</body>
+</html>
