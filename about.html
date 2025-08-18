@@ -7,7 +7,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
     	#top-row{
-/*					position:  fixed;*/
 			padding-top: 20px;
 			height:  50px;
 
@@ -25,7 +24,6 @@
 
 		li {
 			padding-left:  20px;
-		
 /*			vertical-align: bottom;*/
 			display: inline;
 			background-color: none;
@@ -35,7 +33,7 @@
 		li a{
 			display: inline-block;
 /*			vertical-align: bottom;*/
-			font-size:  11px;
+			font-size:  12px;
 			text-decoration: none;
 			color:  black;
 			font-color:  #ffff;
@@ -50,7 +48,6 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
         }
         
         .gallery-img {
@@ -76,12 +73,21 @@
             height: auto;
             display: block;
         }
+
+        #spacer {
+			height:  70px;
+		}
+
         
         /* Optional: Add some spacing between images on mobile */
         @media (max-width: 768px) {
             .col-md-6 {
                 margin-bottom: 30px;
             }
+        }
+
+        #about {
+        	font-size: 12px;
         }
     </style>
 </head>
@@ -117,8 +123,21 @@
 				</ul> <!-- navbar -->
 			</div>
  		</div> 
- 		tiffanikao@gmail.com 
-        </div>
+
+ 		<div id = "spacer"> </div>
+ 			<div class="row">
+ 				<div class="col-4">	
+			         <img src="img/kale.png" alt="Gallery Image 2">
+				</div>
+				<div class="col-4" id="about">	
+					<p>Tiffany Kao is an artist, designer, and video editor whose work is deeply rooted in her early passion for concept art and world-building. She has previously worked with Reese's Book Club, where she edited and assistant produced an author interview series with Apple Books, featuring releases from Emily Henry and Riley Keough. She has also edited for the creative content team at NBCUniversal (America's Got Talent, Law & Order SVU, Night Court, Jimmy Fallon).</p>
+
+					<p>Tiffany is a graduate of USC School of Cinematic Arts where she studied animation & digital arts and minored in computer programming. She is currently based in NYC.</p>
+
+					<p>Contact: 		tiffanikao@gmail.com </p>
+		        </div>
+			</div>
+
     </div>
 </body>
 </html>
