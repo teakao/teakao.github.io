@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tiffany Kao</title>
-	<link rel="stylesheet" href="index.css"> <!-- LINKED -->
+	<link rel="stylesheet" href="index.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
 	<style>
@@ -14,343 +13,338 @@
 			max-width: 900px;
 			margin: auto;
 			letter-spacing: 0.28px;
-			/*font-family: monospace;*/
-			/*font-family: 'Inter';font-size: 22px;*/
-	/*				text-decoration: none;*/
+			overflow-x: hidden;
 		}
 
-		#top-row{
-/*					position:  fixed;*/
+		#top-row {
 			padding-top: 20px;
-			height:  50px;
-
+			height: 50px;
+			display: flex;
+			align-items: center;
 		}
 
+		#top-row .col-sm-3 { flex: 0 0 auto; }
+		#top-row .col-9 { flex: 1; }
 
 		li {
-			padding-left:  20px;
-		
-/*			vertical-align: bottom;*/
+			padding-left: 20px;
 			display: inline;
-			background-color: none;
-
 		}
 
-		li a{
+		li a {
 			display: inline-block;
-/*			vertical-align: bottom;*/
-			font-size:  12px;
-			text-decoration: none;
-			color:  black;
-			font-color:  #ffff;
-			font-family:  helvetica;
-		}
-
-		#navibar{
-			text-align: right;
-/*			position:  fixed;
-			right:  0px;*/
-		}
-
-/*		#container{
-			width: 900px;
-			margin:  auto;
-			padding-bottom: 100px;
-			
-		}*/
-
-        .gallery-container {
-        	/*background-color:  red;*/
-        	margin-right:  0px;
-            
-            margin-top: 8px;
-
-        }
-        
-        .gallery-item {
-/*            margin-bottom: 10px;*/
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-        
-/*        .gallery-item:hover {
-            transform: scale(1.02);
-        }*/
-        
-        .gallery-img {
-            width: 100%;
- 
-            object-fit: cover;
-            padding:  0px;
-            transition: all 0.3s ease;
-        }
-        
-        @media (max-width: 2000px) {
-            .gallery-img {
-                height: 280px;  /*Smaller height on mobile but still in a row */
-            }
-        }
-
-        .row {
-			/*height:  400px;*/
-			/*background-color:  red;*/
-		}
-
-		#nbc-logo {
-			width:  200px;
-		}
-
-		#rbc-logo {
-			display:  block;
-			margin-left:  auto;
-			margin-right:  auto;
-			width:  80px;
-		}
-
-		#hs-logo {
-			display:  block;
-			margin-left:  auto;
-			margin-right:  auto;
-			width:  140px;
-		}
-
-		#button {
-			margin-top:  10px;
-			height: 30px;
-			width:  auto;
-			float:  left;
-			opacity: 0.5;
-		}
-
-		#button:hover{
-			opacity: 1.0;
-		}
-
-
-		h1{
-			/*font-family: monospace;*/
-    		/*font-family: 'Inter';font-size: 22px;*/
-    		
-  			font-stretch: ultra-expanded;
-  			font-weight: bond;
-  			font-size:  40px;
-			/*position:  fixed;*/
-			/*font-family:  Helvetica Neue;*/
-			/*font-family: "Archivo Black", sans-serif;*/
-		}
-
-
-		#page-wrapper {
-			margin-bottom:  100px;
-		}
-
-		h2 {
-
-			font-size: 22px;
-			font-family:  helvetica;
-			/*font-family:  monospace;*/
-			/*font-weight:  bold;*/
-		}
-
-		h4{
-			font-family:  arial;
-			text-transform:  uppercase;
 			font-size: 12px;
+			text-decoration: none;
+			color: black;
+			font-family: helvetica;
 		}
 
-		h5{
-			font-family:  arial;
+		#navibar {
+			text-align: right;
+		}
+
+		.section {
+			margin-top: 40px;
+		}
+
+		.section-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: 8px;
+			margin-bottom: 10px;
+		}
+
+		.section-logo { flex-shrink: 0; }
+		.section-logo img { display: block; }
+
+		#rbc-logo { width: 70px; }
+		#nbc-logo { width: 160px; }
+		#hs-logo  { width: 120px; }
+
+		.section-meta { 
+			flex: 1; 
+			padding-bottom: 20px;
+		}
+
+		/* Full-width breakout for gallery rows */
+		.gallery-container {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100vw;
+			min-width: 700px;
+			display: flex;
+			align-items: stretch;
+			gap: 4px;
+			padding: 0 200px;
+			box-sizing: border-box;
+		}
+
+		.gallery-col {
+			flex: 1;
+			min-width: 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.gallery-item {
+			overflow: hidden;
+		}
+
+		.gallery-caption {
+			text-align: center;
+			padding: 8px 4px 4px;
+		}
+
+		.gallery-caption .cap-role {
+			font-family: arial;
+			font-size: 10px;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			margin: 0;
+		}
+
+		.gallery-caption .cap-title {
+			font-family: helvetica;
 			font-size: 11px;
+			margin: 2px 0 0;
 		}
 
-		h6{
-			font-family:  helvetica;
-	/*		font-family:  monospace;*/
+		.gallery-img {
+			width: 100%;
+			height: 620px;
+			object-fit: cover;
+			display: block;
+		}
+
+		h4 {
+			font-family: arial;
+			text-transform: uppercase;
+			font-size: 12px;
+			margin-bottom: 4px;
+		}
+
+		h5 {
+			font-family: arial;
 			font-size: 11px;
-/*			text-align:  right;*/
-
+			margin-bottom: 2px;
 		}
 
-		#spacer {
-			height:  70px;
+		h6 {
+			font-family: helvetica;
+			font-size: 11px;
+			margin-bottom: 0;
 		}
 
 		#name {
 			font-size: 16px;
-			font-family:  helvetica;
-			font-weight:  bold;
-			color:  black;
+			font-family: helvetica;
+			font-weight: bold;
+			color: black;
 		}
 
-		#foot{
-			text-align:  center;
+		#spacer { height: 70px; }
+
+		#foot {
+			text-align: center;
 			width: 500px;
-			font-size:  12px;
-			margin:  auto;
+			font-size: 12px;
+			margin: auto;
 		}
 
+		/* Hero video */
+		#hero-video-wrapper {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100vw;
+			margin-top: 24px;
+			overflow: hidden;
+		}
 
-}
-
-
-
+		#hero-video {
+			width: 100%;
+			height: 70vh;
+			object-fit: cover;
+			display: block;
+		}
 	</style>
 </head>
 <body>
 
-	<div id = top-row class = "row">
-<!-- 			<div id = "name" > -->
+	<div id="top-row" class="row">
+		<div class="col-sm-3">
+			<h4 id="name">tiffany kao</h4>
+		</div>
+		<div class="col-9">
+			<ul id="navibar">
+				<li><a href="/">Video</a></li>
+				<li><a href="/concept_art">Concept Art</a></li>
+				<li><a href="/design">Design</a></li>
+				<li><a href="/personal">Paintings</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</div>
+	</div>
 
-			<div class="col-sm-3">
-				<!-- <img id = "logo" src = "img/T_KAO.png" alt = "TEAKAO"> -->
-				<h4 id = "name">tiffany kao</h4>
+	<!-- HERO VIDEO -->
+	<div id="hero-video-wrapper">
+		<video id="hero-video" autoplay loop muted playsinline>
+			<source src="img/RileyKeoughLitCheck.mp4" type="video/mp4">
+		</video>
+	</div>
 
-				<!-- <h2>EDITOR, ARTIST</h2>	 -->
+	<div id="container">
+
+		<!-- REESE'S BOOK CLUB -->
+		<div class="section">
+			<div class="section-header">
+				<div class="section-logo">
+					<img id="rbc-logo" src="img/reesesbookclub.png" alt="RBC_Logo">
+				</div>
+				<div class="section-meta">
+					<h4>REESE'S BOOK CLUB</h4>
+					<h5>A <a href="https://www.instagram.com/reesesbookclub/?hl=en">Reese's Book Club X Apple Books</a> collaboration featuring authors Emily Henry, Riley Keough, Ashley Elston, &amp; Nadia Caterina Munno</h5>
+					<h6>2024-2025</h6>
+				</div>
 			</div>
-			<div class="col-9">
-				<ul id="navibar" >
-					<!-- use react but adding additional html for now -->
-					<li><a href="/">Video</a></li>
-					<li><a href="/concept_art">Concept Art</a></li>
-					<!-- <li><a href="paintings.php">Paintings</li> -->
-					<li><a href="/design">Design</a></li>
-					<li><a href="/personal">Paintings</a></li>
-					<!-- <li><a href="misc.php">MISC</a></li> -->
-					<li><a href="/about">About</a></li>
-				</ul> <!-- navbar -->
-			</div>
-	</div>	<!-- #top-row -->
-
-
-
-
-	<div id = "spacer">
-	</div>	
-
-
-
-<!-- 	<div id="page-wrapper"> -->
-	<div id="container"><!-- container-->
-			<!-- ROW 1-->
-			<div class="row gx-2 gallery-container">
-				    <div class="col-3">
-				    	<div class="gallery-item">
-				    		<img id = "rbc-logo" src="img/reesesbookclub.png" alt="RBC_Logo">
-					        <!-- <h2>Reese's Book Club</h2> -->
-					        <br></br>
-					        <h4>EDITOR / ASSOCIATE PRODUCER</h4>
-					        <h5>A <a href="https://www.instagram.com/reesesbookclub/?hl=en">Reese's Book Club X Apple Books</a> collaboration featuring authors Emily Henry, Riley Keough, Ashley Elston, & Nadia Caterina Munno</h5>
-					         <h6>2024-2025</h6>
-					        <br></br>
-					    </div>    
-				    </div>
-			    		            <!-- Single row of 3 images -->
-					<div class="col-2">
-						<div class="gallery-item">
-							<a href="ttps://www.instagram.com/reesesbookclub/reel/DJCRyDasA_-/">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/pastaqueen_prev.mp4" type="video/mp4">
-					        </video>
-					    	</a>
-					    </div>
+			<div class="gallery-container">
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<a href="https://www.instagram.com/reesesbookclub/reel/DJCRyDasA_-/">
+							<video class="gallery-img" autoplay loop muted playsinline>
+								<source src="img/pastaqueen_prev.mp4" type="video/mp4">
+							</video>
+						</a>
 					</div>
-		            	            
-		            <div class="col">
-		                <div class="gallery-item">
-		                	<a href="https://www.youtube.com/watch?v=9agILvdCW5A&ab_channel=ReeseWitherspoonxHelloSunshine">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/RileyKeoughLitCheck.mp4" type="video/mp4">
-					        </video>
-					        </a>
-					    </div>
-		            </div>
+					<div class="gallery-caption">
+						<p class="cap-role">Lead Editor / Associate Producer</p>
+						<p class="cap-title">Pasta Queen — Apple Books Feature</p>
+					</div>
+				</div>
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<a href="https://www.youtube.com/watch?v=9agILvdCW5A&ab_channel=ReeseWitherspoonxHelloSunshine">
+							<video class="gallery-img" autoplay loop muted playsinline>
+								<source src="img/RileyKeoughLitCheck.mp4" type="video/mp4">
+							</video>
+						</a>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Lead Editor / Associate Producer</p>
+						<p class="cap-title">Riley Keough — Apple Books Feature</p>
+					</div>
+				</div>
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<a href="https://www.youtube.com/watch?v=7wxfSeW2kC0">
+							<video class="gallery-img" autoplay loop muted playsinline>
+								<source src="img/EmilyHenryLitCheck.mp4" type="video/mp4">
+							</video>
+						</a>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Lead Editor / Associate Producer</p>
+						<p class="cap-title">Emily Henry — Apple Books Feature</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		            <div class="col-2">
-		                <div class="gallery-item">
-		                	<a href="https://www.youtube.com/watch?v=7wxfSeW2kC0">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/EmilyHenryLitCheck.mp4" type="video/mp4">
-					        </video>
-					        </a>
-					    </div>
-					</div>    
-			</div><!-- ROW 1-->
+		<!-- NBC -->
+		<div class="section">
+			<div class="section-header">
+				<div class="section-logo">
+					<img id="nbc-logo" src="img/nbc_logo.png" alt="NBC_Logo">
+				</div>
+				<div class="section-meta">
+					<h4>NBCUniversal</h4>
+					<h5>Creative content for TV, social, campaign / ft. America's Got Talent, Law &amp; Order, The Voice, Jimmy Fallon Tonight</h5>
+					<h6>2023-present</h6>
+				</div>
+			</div>
+			<div class="gallery-container">
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<a href="https://shortyawards.com/16th/americas-got-talent-socials-biggest-stage">
+							<img src="img/AGT.png" alt="Gallery Image 2" class="gallery-img">
+						</a>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Assistant Editor, Lead Animator</p>
+						<p class="cap-title">America's Got Talent Social Campagin</p>
+					</div>
+				</div>
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<video class="gallery-img" autoplay loop muted playsinline>
+							<source src="img/AdamLevinetheVoice.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Lead Editor, Animator</p>
+						<p class="cap-title">The Voice — Adam Levine</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- HELLO SUNSHINE -->
+		<div class="section">
+			<div class="section-header">
+				<div class="section-logo">
+					<img id="hs-logo" src="img/HelloSunshine.png" alt="HS_Logo">
+				</div>
+				<div class="section-meta">
+					<h4>HELLO SUNSHINE</h4>
+					<h6>Creative content for Daisy Jones &amp; the Six, Surf Girls Hawaii, Diageo x Angel City Football Club, Equity House</h6>
+				</div>
+			</div>
+			<div class="gallery-container">
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<video class="gallery-img" autoplay loop muted playsinline>
+							<source src="img/DaisyJonesEdit.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Editor</p>
+						<p class="cap-title">Daisy Jones &amp; the Six: Book to Screen Concept</p>
+					</div>
+				</div>
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<video class="gallery-img" autoplay loop muted playsinline>
+							<source src="img/MostLikelyTo.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Editor, Animator</p>
+						<p class="cap-title">Most Likely To with Natalie Portman &amp; ACFC Founders</p>
+					</div>
+				</div>
+				<div class="gallery-col">
+					<div class="gallery-item">
+						<a href="https://www.instagram.com/reel/CvOffeoOpI4/">
+							<video class="gallery-img" autoplay loop muted playsinline>
+								<source src="img/RockRunning.mp4" type="video/mp4">
+							</video>
+						</a>
+					</div>
+					<div class="gallery-caption">
+						<p class="cap-role">Editor, Interview Cut & Captioning</p>
+						<p class="cap-title">Surf Girls: Blue Crush Feature</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-			<!-- ROW 2 -->
-			<div class="row gx-2  gallery-container">
-				    <div class="col-3">
-				    	<div class="gallery-item">
-				    		<img id = "nbc-logo" src="img/nbc_logo.png" alt="NBC_Logo">
-				    		<br></br>
-					        <h4>VIDEO EDITOR, ANIMATOR</h4>
-					        <h5>Creative content for TV, social, campaign / ft. America's Got Talent, Law & Order, The Voice, Jimmy Fallon Tonight</h5>
-					        <h6>2023-present</h6>
-					        <br></br>
-					    </div>    
-				    </div>
+		<div id="spacer"></div>
+		<div id="foot">TIFFANY KAO &copy; 2026</div>
 
-		            <div class="col">
-		            	<a href="https://shortyawards.com/16th/americas-got-talent-socials-biggest-stage">
-		                <div class="gallery-item">
-		                    <img src="img/AGT.png" alt="Gallery Image 2" class="gallery-img">
-		                </div>
-		            	</a>
-		            </div>
-
-		            <div class="col-3">
-		                <div class="gallery-item">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/AdamLevinetheVoice.mp4" type="video/mp4">
-					        </video>
-					    </div>
-		            </div>	
-			</div><!-- ROW 2 -->
-
-			<div class="row gx-2  gallery-container ">
-				    <div class="col-3">
-				    	<div class="gallery-item">
-				    		<img id = "hs-logo" src="img/HelloSunshine.png" alt="HS_Logo">
-					        <!-- <h2>Hello Sunshine</h2> -->
-					        <br></br>
-					        <h4>VIDEO EDITOR, ANIMATOR</h4>
-					        <h6>Creative content for Daisy Jones & the Six, Surf Girls Hawaii, Diageo x Angel City Football Club, Equity House</h5>
-
-					    </div>    
-				    </div>
-			    		            <!-- Single row of 3 images -->
-
-			    	<div class="col-3">
-		                <div class="gallery-item">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/DaisyJonesEdit.mp4" type="video/mp4">
-					        </video>
-					    </div>
-		            </div>
-		            <div class="col-3">
-		                <div class="gallery-item">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/MostLikelyTo.mp4" type="video/mp4">
-					        </video>
-					    </div>
-		            </div>
-		            <div class="col-3">
-		                <div class="gallery-item">
-		                	<a href="https://www.instagram.com/reel/CvOffeoOpI4/">
-					        <video class="gallery-img" autoplay loop muted playsinline>
-					            <source src="img/RockRunning.mp4" type="video/mp4">
-					        </video>
-					        </a>
-					    </div>
-		            </div>
-		     </div>	<!-- ROW 3 -->
-	
-<!-- 			<img id = "home-page-photo" src = "img/la-3.png" alt = "TEAKAO"> -->	
-		<div id = "spacer"></div>
-		<div id = "foot"> TIFFANY KAO &copy; 2025</div>
-	</div><!-- container-->
-
-
+	</div><!-- container -->
 
 </body>
 </html>
